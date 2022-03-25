@@ -30,15 +30,17 @@
             </div>
         </div>
     </header>
-    <main class="h-screen bg-white">
+    <main class="h-screen w-screen bg-slate-800 text-white">
         <!-- About -->
         <section id="about">
-            <h2>About</h2>
-            <p>Salut !</p>
-            <p>Je suis August, développeur Web junior  en apprentissage à l’Access Code School de Besançon.</p>
-            <p>Si vous avez des questions ou que vous voulez en savoir plus, n'hésitez pas à me contacter et à télécharger mon CV ci-dessous.</p>
-            <button>Mon CV</button>
-            <img src="./assets/images/singe_astronaut.svg" alt="singe de l'espace">
+            <h2 class="text-4xl text-center bg-slate-700 py-3 tShadow">About</h2>
+            <div class="text-center my-10 text-sm">
+                <p>Salut !</p>
+                <p>Je suis August, développeur Web junior  en apprentissage à l’Access Code School de Besançon.</p>
+                <p>Si vous avez des questions ou que vous voulez en savoir plus, n'hésitez pas à me contacter et à télécharger mon CV ci-dessous.</p> 
+            </div>
+            <a class= "bg-slate-900 text-white border-2 border-yellow-400 rounded-full px-10 py-2 text-xl hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)] hover:bg-slate-800" href="./assets/cv.pdf">Mon CV</a>
+            <img class="m-auto h-auto w-40" src="./assets/images/singe_astronaut.svg" alt="singe de l'espace" id="singeSpace">
         </section>
         <!-- Work -->
         <section>
@@ -76,7 +78,7 @@
             <img src="./assets/images/singe_compta.svg" alt="singe qui fait la compta">
         </section>
     </main>
-    <footer class="text-center">
+    <footer class="text-center bg-slate-800">
         <div>
             <button>git</button>
             <button>linkedin</button>
