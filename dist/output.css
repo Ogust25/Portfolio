@@ -639,27 +639,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 1px;
 }
 
-.border-x {
-  border-left-width: 1px;
-  border-right-width: 1px;
-}
-
-.border-x-4 {
-  border-left-width: 4px;
-  border-right-width: 4px;
-}
-
-.border-y-4 {
-  border-top-width: 4px;
-  border-bottom-width: 4px;
-}
-
 .border-b {
   border-bottom-width: 1px;
-}
-
-.border-b-4 {
-  border-bottom-width: 4px;
 }
 
 .border-b-2 {
@@ -861,21 +842,12 @@ main{
   padding-top: 1rem;
 }
 
-.hover\:border-b:hover {
-  border-bottom-width: 1px;
-}
-
-.hover\:border-b-4:hover {
-  border-bottom-width: 4px;
-}
-
 .hover\:border-b-2:hover {
   border-bottom-width: 2px;
 }
 
-.hover\:border-yellow-700:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(161 98 7 / var(--tw-border-opacity));
+.hover\:border-b:hover {
+  border-bottom-width: 1px;
 }
 
 .hover\:border-yellow-500:hover {
@@ -886,16 +858,6 @@ main{
 .hover\:bg-slate-800:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
-}
-
-.hover\:text-slate-800:hover {
-  --tw-text-opacity: 1;
-  color: rgb(30 41 59 / var(--tw-text-opacity));
-}
-
-.hover\:text-slate-700:hover {
-  --tw-text-opacity: 1;
-  color: rgb(51 65 85 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {
@@ -979,10 +941,6 @@ main{
     width: 66.666667%;
   }
 
-  .sm\:w-1\/5 {
-    width: 20%;
-  }
-
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -995,10 +953,6 @@ main{
     flex-wrap: wrap;
   }
 
-  .sm\:justify-between {
-    justify-content: space-between;
-  }
-
   .sm\:justify-around {
     justify-content: space-around;
   }
@@ -1006,11 +960,6 @@ main{
   .sm\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
-  }
-
-  .sm\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
   }
 
   .sm\:text-xl {
