@@ -47,7 +47,7 @@
             </div>
         </section>
         <!-- Work -->
-        <section>
+        <section id="work">
             <h2 class="text-4xl text-center bg-slate-700 py-3 tShadow">Work</h2>
             <div class="flex-wrap flex py-20">
                 <img class="sm:w-3/6 xl:w-1/3" src="./assets/images/projet_git.png" alt="projet git">
@@ -57,7 +57,7 @@
             </div>
         </section>
         <!-- Lab -->
-        <section>
+        <section id="lab">
             <h2 class="text-4xl text-center bg-slate-700 py-3 tShadow">Lab</h2>
             <div class="flex-wrap flex py-20">
                 <img class="sm:w-3/6 xl:w-1/3" src="./assets/images/projet_order.png" alt="projet order">
@@ -67,7 +67,7 @@
             </div>
         </section>
         <!-- Blog -->
-        <section>
+        <section id="blog">
             <div class="lg:flex lg:justify-center">
                 <h2 class="text-4xl text-center bg-slate-700 lg:bg-transparent py-3 tShadow">Blog</h2>
                 <img class="hidden lg:flex" src="./assets/images/smoking.png" alt="singe en costume">
@@ -103,7 +103,7 @@
             </div>
         </section>
         <!-- Contact -->
-        <section class="bg-white">
+        <section class="bg-white" id="contact">
             <h2 class="text-slate-700 text-center text-4xl my-10">Say something !</h2>
             <div class="flex justify-center">
                 <form class="flex flex-col items-center w-5/6 sm:w-4/6 md:w-3/6 lg:w-1/3" method="post">
@@ -116,24 +116,24 @@
             <img class="w-32" src="./assets/images/comta.png" alt="singe qui fait la compta">
         </section>
     </main>
-    <footer class="text-white text-center bg-slate-800 flex flex-col items-center">
-        <div class="text-slate-800 flex">
-            <a href="https://github.com/Ogust25" target="_blank"><img class="yellowCustom w-20 h-20 p-3" src="./assets/images/logo_git.svg" alt="logo github"></a>
-            <a href="https://www.linkedin.com/in/august-gros/" target="_blank"><img class="yellowCustom w-20 h-20 p-3" src="./assets/images/logo_linkedin.svg" alt="logo linkedin"></a>
+    <footer class="text-white text-center bg-slate-800 flex flex-col items-center justify-center sm:flex-row sm:flex-wrap">
+        <div class="text-slate-800 flex justify-center m-8 sm:order-2 sm:w-1/3 sm:m-0">
+            <a href="https://github.com/Ogust25" target="_blank"><img class="yellowCustom hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)] mr-8 w-20 h-20 p-3" src="./assets/images/logo_git.svg" alt="logo github"></a>
+            <a href="https://www.linkedin.com/in/august-gros/" target="_blank"><img class="yellowCustom hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)] w-20 h-20 p-3" src="./assets/images/logo_linkedin.svg" alt="logo linkedin"></a>
         </div>
-        <ul class="text-3xl">
-            <li>About</li>
-            <li>Work</li>
-            <li>Lab</li>
-            <li>Blog</li>
-            <li>Contact</li>
+        <ul class="text-3xl sm:text-xl sm:mt-10 sm:order-1 sm:w-1/3">
+            <li><a class="border-b border-transparent border-b-2 hover:border-b-2 hover:border-b hover:border-yellow-500" href="#about">About</a></li>
+            <li><a class="border-b border-transparent border-b-2 hover:border-b-2 hover:border-b hover:border-yellow-500" href="#work">Work</a></li>
+            <li><a class="border-b border-transparent border-b-2 hover:border-b-2 hover:border-b hover:border-yellow-500" href="#lab">Lab</a></li>
+            <li><a class="border-b border-transparent border-b-2 hover:border-b-2 hover:border-b hover:border-yellow-500" href="#blog">Blog</a></li>
+            <li><a class="border-b border-transparent border-b-2 hover:border-b-2 hover:border-b hover:border-yellow-500" href="#contact">Contact</a></li>
         </ul>
-        <div>
+        <a href="#" class="m-8 hover:underline hover:underline-offset-2 hover:decoration-yellow-500 sm:m-0 sm:order-3 sm:w-1/3 sm:text-xl">
             <p>Terms and conditions</p>
             <p>&</p>
             <p>privacy and policy</p>
-        </div>
-        <p>AUGUST GROS &copy; 2022</p>
+        </a>
+        <p class="mb-2 sm:order-4">AUGUST GROS &copy; 2022</p>
     </footer>
 </body>
 </html>
