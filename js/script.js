@@ -1,3 +1,5 @@
+/* Form */
+
 const btn = document.querySelector("#btnValider")
 const inputNom = document.querySelector("#inputNom")
 const inputEmail = document.querySelector("#inputEmail")
@@ -46,3 +48,36 @@ btn.addEventListener('click', function(){
         document.querySelector('#emailError').classList.remove("invisible")
     }
 })
+
+
+/* Spy Scroll */
+
+const sections = document.querySelectorAll("section");
+const navLi = document.querySelectorAll("nav ul li");
+window.onscroll = () => {
+    let current = "";
+ 
+
+    if(window.scrollY !== document.querySelector('body').offsetTop){
+        document.querySelector('nav').classList.add("stickyCustom")
+    }else{
+        document.querySelector('nav').classList.remove("stickyCustom")
+    }
+
+
+    sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        if (window.scrollY >= sectionTop - 60) {
+            current = section.getAttribute("id");
+        }
+    });
+
+    navLi.forEach((li) => {
+        li.classList.remove("active");
+        if (li.classList.contains(current)) {
+            li.classList.add("active");
+        }
+    });
+};
+
+
