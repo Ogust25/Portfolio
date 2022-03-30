@@ -56,14 +56,12 @@ const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll("nav ul li");
 window.onscroll = () => {
     let current = "";
- 
 
-    if(window.scrollY !== document.querySelector('body').offsetTop){
+    if(window.scrollY >= 1000 ){
         document.querySelector('nav').classList.add("stickyCustom")
     }else{
         document.querySelector('nav').classList.remove("stickyCustom")
     }
-
 
     sections.forEach((section) => {
         const sectionTop = section.offsetTop;
