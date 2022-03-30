@@ -79,3 +79,15 @@ window.onscroll = () => {
 };
 
 
+/* Api Medium */
+
+/* let apiCall = function(){
+    let url = `https://api.medium.com/v1`;
+    fetch(url)
+    .then((response) =>
+    response.json().then((data) => {
+        console.log(data);
+    })
+    )  
+}
+apiCall() */
