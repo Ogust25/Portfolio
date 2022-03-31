@@ -496,6 +496,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: -50;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
 .m-5 {
   margin: 1.25rem;
 }
@@ -535,12 +543,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2.5rem;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
 .mb-3 {
   margin-bottom: 0.75rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .mb-7 {
@@ -719,19 +727,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.5rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
-}
-
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
 }
 
 .pl-5 {
@@ -800,6 +803,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(30 41 59 / var(--tw-text-opacity));
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
 .duration-300 {
   transition-duration: 300ms;
 }
@@ -864,7 +871,7 @@ nav ul li.active {
 }
 
 #about{
-  background: url("../assets/images/bg_stars.png");
+  background: url("../assets/images/bg_stars.png") fixed;
   background-size: 100% auto;
   height: 50rem;
 }
@@ -876,6 +883,29 @@ nav ul li.active {
 
 .bgColor{
   background-color: #242635;
+}
+
+.bgBox{
+  transition: ease-out 0.5s;
+}
+
+.bgBox:hover{
+  background: linear-gradient(10deg, rgba(0, 0, 0, 0.8), rgba(63, 63, 63, 0.5));
+  transition: ease-in 0.3s;
+}
+
+/* Zoom img | Work/Lab */
+
+.zoom{
+  overflow: hidden;
+}
+
+.zoom .imgZoom {
+  transition: transform .9s ease;
+}
+
+.zoom:hover .imgZoom {
+  transform: scale(1.2);
 }
 
 .hover\:border-yellow-500:hover {
@@ -900,6 +930,10 @@ nav ul li.active {
 
 .hover\:underline-offset-2:hover {
   text-underline-offset: 2px;
+}
+
+.hover\:opacity-100:hover {
+  opacity: 1;
 }
 
 .hover\:drop-shadow-\[0_0px_10px_rgba\(230\2c 170\2c 0\2c 0\.75\)\]:hover {
@@ -1036,27 +1070,14 @@ nav ul li.active {
     background-color: transparent;
   }
 
-  .lg\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .lg\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
   .lg\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
   }
 
-  .lg\:duration-300 {
-    transition-duration: 300ms;
-  }
-
-  .lg\:ease-in {
-    transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 

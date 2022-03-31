@@ -15,7 +15,7 @@
     <header>
         <video class="relative -z-50 h-screen w-screen object-fill" src="./assets/images/space_black.mp4" loop autoplay muted></video>
         <div class="absolute top-0 left-0 h-full w-full ">
-            <nav class="flex justify-between top-0 fixed w-full ease-in duration-300">
+            <nav class="flex justify-between top-0 fixed w-full ease-in duration-300 z-10">
                 <ul class="text-white text-3xl hidden sm:flex p-5 tShadow">
                     <li class="about mr-5"><a href="#about">About</a></li>
                     <li class="work mr-5"><a href="#work">Work</a></li>
@@ -52,20 +52,64 @@
         <section id="work">
             <h2 class="text-4xl text-center bg-slate-700 py-5 tShadow lg:bg-transparent lg:text-7xl" data-aos="fade-right">Work</h2>
             <div class="flex-wrap flex py-20">
-                <img class="sm:w-3/6 xl:w-1/3" src="./assets/images/projet_git.png" alt="projet git">
-                <img class="sm:w-3/6 xl:w-1/3" src="./assets/images/projet_cafe.png" alt="projet caf">
-                <img class="sm:w-3/6 xl:w-1/3" src="./assets/images/projet_cafe.png" alt="projet caf"> 
-                <img class="sm:w-3/6 xl:w-1/3" src="./assets/images/projet_git.png" alt="projet git">      
+                <div class="xl:w-1/3 sm:w-3/6 relative zoom">
+                    <img class="z-0 imgZoom" src="./assets/images/projet_cafe.png" alt="projet caf">
+                    <div class=" hover:opacity-100 opacity-0 flex flex-col items-center justify-center z-10 absolute top-0 w-full h-full bgBox">
+                        <p class="text-xl">Projet</p>
+                        <p class="text-3xl mb-3">Café Shuffle</p>
+                        <a class= "bg-slate-900 text-white border-2 border-yellow-400 rounded-full px-10 py-2 text-xl hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)] hover:bg-slate-800" href="#">See more</a>
+                    </div>
+                </div>
+                <div class="xl:w-1/3 sm:w-3/6 relative zoom">
+                    <img class="z-0 imgZoom" src="./assets/images/projet_git.png" alt="projet git">
+                    <div class=" hover:opacity-100 opacity-0 flex flex-col items-center justify-center z-10 absolute top-0 w-full h-full bgBox">
+                        <p class="text-xl">Projet</p>
+                        <p class="text-3xl mb-3">Devfinder</p>
+                        <a class= "bg-slate-900 text-white border-2 border-yellow-400 rounded-full px-10 py-2 text-xl hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)] hover:bg-slate-800" href="#">See more</a>
+                    </div>
+                </div>                
+                <div class="xl:w-1/3 sm:w-3/6 relative zoom">
+                    <img class="z-0 imgZoom" src="./assets/images/projet_widget.png" alt="projet widget">
+                    <div class=" hover:opacity-100 opacity-0 flex flex-col items-center justify-center z-10 absolute top-0 w-full h-full bgBox">
+                        <p class="text-xl">Projet</p>
+                        <p class="text-3xl mb-3">Widget</p>
+                        <a class= "bg-slate-900 text-white border-2 border-yellow-400 rounded-full px-10 py-2 text-xl hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)] hover:bg-slate-800" href="#">See more</a>
+                    </div>
+                </div>                
+                    
             </div>
         </section>
         <!-- Lab -->
         <section id="lab">
             <h2 class="text-4xl text-center bg-slate-700 py-5 tShadow lg:bg-transparent lg:text-7xl" data-aos="fade-right">Lab</h2>
             <div class="flex-wrap flex py-20">
-                <img class="sm:w-3/6 xl:w-1/3" src="./assets/images/projet_order.png" alt="projet order">
-                <img class="sm:w-3/6 xl:w-1/3" src="./assets/images/projet_form.png" alt="projet form">
-                <img class="sm:w-3/6 xl:w-1/3" src="./assets/images/projet_form.png" alt="projet form">
-                <img class="sm:w-3/6 xl:w-1/3" src="./assets/images/projet_order.png" alt="projet order">
+                <!-- Order -->
+                <div class="xl:w-1/3 sm:w-3/6 relative zoom">
+                    <img class="z-0 imgZoom" src="./assets/images/projet_order.png" alt="projet order">
+                    <div class=" hover:opacity-100 opacity-0 flex flex-col items-center justify-center z-10 absolute top-0 w-full h-full bgBox">
+                        <p class="text-xl">Lab</p>
+                        <p class="text-3xl mb-3">Order Card</p>
+                        <a class= "bg-slate-900 text-white border-2 border-yellow-400 rounded-full px-10 py-2 text-xl hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)] hover:bg-slate-800" href="#">See more</a>
+                    </div>
+                </div>
+                <!-- Formulaire -->
+                <div class="xl:w-1/3 sm:w-3/6 relative zoom">
+                    <img class="z-0 imgZoom" src="./assets/images/projet_form.png" alt="projet form">
+                    <div class=" hover:opacity-100 opacity-0 flex flex-col items-center justify-center z-10 absolute top-0 w-full h-full bgBox">
+                        <p class="text-xl">Lab</p>
+                        <p class="text-3xl mb-3">Formulaire</p>
+                        <a class= "bg-slate-900 text-white border-2 border-yellow-400 rounded-full px-10 py-2 text-xl hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)] hover:bg-slate-800" href="#">See more</a>
+                    </div>
+                </div>
+                <!-- Néomorphisme -->        
+                <div class="xl:w-1/3 sm:w-3/6 relative zoom">
+                    <img class="z-0 imgZoom" src="./assets/images/projet_neo.png" alt="projet neomorphisme">
+                    <div class=" hover:opacity-100 opacity-0 flex flex-col items-center justify-center z-10 absolute top-0 w-full h-full bgBox">
+                        <p class="text-xl">Lab</p>
+                        <p class="text-3xl mb-3">Néomorphisme</p>
+                        <a class= "bg-slate-900 text-white border-2 border-yellow-400 rounded-full px-10 py-2 text-xl hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)] hover:bg-slate-800" href="#">See more</a>
+                    </div>
+                </div>                 
             </div>
         </section>
         <!-- Blog -->
@@ -106,7 +150,7 @@
         </section>
         <!-- Contact -->
         <section id="contact">
-            <img src="./assets/images/bg_kc_up.png">
+            <img src="./assets/images/bg_kc_up.svg">
             <div class="bg-white">
                 <h2 class="text-slate-700 text-center text-4xl mb-10">Say something !</h2>
                 <div class="flex justify-center">
@@ -122,7 +166,7 @@
                 </div>
                 <!-- <img class="w-32" src="./assets/images/comta.png" alt="singe qui fait la compta"> -->
             </div>
-            <img src="./assets/images/bg_kc_down.png">
+            <img src="./assets/images/bg_kc_down.svg">
         </section>
     </main>
     <footer class="sm:h-72 text-white text-center bg-slate-800 flex flex-col items-center justify-center sm:flex-row sm:flex-wrap">
