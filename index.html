@@ -16,7 +16,7 @@
     <header>
         <video class="relative -z-50 h-screen w-screen object-fill" src="./assets/images/space_black.mp4" loop autoplay muted></video>
         <div class="absolute top-0 left-0 h-full w-full ">
-            <nav class="flex justify-between top-0 fixed w-full ease-in duration-300 z-10">
+            <nav class="flex justify-between top-0 fixed w-full ease-in duration-300 z-50">
                 <ul class="text-white text-3xl hidden sm:flex p-5 tShadow">
                     <li class="about mr-5"><a href="#about">About</a></li>
                     <li class="work mr-5"><a href="#work">Work</a></li>
@@ -28,7 +28,8 @@
                 <button class="m-5 text-white">J/N</button>
             </nav>
             <div class="flex flex-col items-center h-full justify-center">
-                <h1 class="font-bold text-center text-5xl text-white mb-20 tShadow">Hey I'm <span class="text-yellow-400">August</span></br> <span class="hidden sm:block">I'm a full-stack web developer</span></h1>
+                <h1 class="font-bold text-center text-5xl text-white mb-20 tShadow">Hey I'm <span class="text-yellow-400">August</span><br>
+                    <span class="hidden sm:block">I'm a full-stack web developer</span></h1>
                 <a class="bg-slate-900 text-white border-2 border-yellow-400 rounded-full px-10 py-2 text-xl hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)] hover:bg-slate-800" href="#about">See more</a>
             </div>
         </div>
@@ -58,7 +59,7 @@
                     <div class=" hover:opacity-100 opacity-0 flex flex-col items-center justify-center z-10 absolute top-0 w-full h-full bgBox">
                         <p class="text-xl">Projet</p>
                         <p class="text-3xl mb-3">Café Shuffle</p>
-                        <a class= "bg-slate-900 text-white border-2 border-yellow-400 rounded-full px-10 py-2 text-xl hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)] hover:bg-slate-800" href="#">See more</a>
+                        <button id="btnModalCafe" class="bg-slate-900 text-white border-2 border-yellow-400 rounded-full px-10 py-2 text-xl hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)] hover:bg-slate-800">See more</button>
                     </div>
                 </div>
                 <div class="xl:w-1/3 sm:w-3/6 relative zoom">
@@ -77,9 +78,30 @@
                         <a class= "bg-slate-900 text-white border-2 border-yellow-400 rounded-full px-10 py-2 text-xl hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)] hover:bg-slate-800" href="#">See more</a>
                     </div>
                 </div>                
-                    
             </div>
         </section>
+
+
+        <!-- Modal Work -->
+        <div id="mainModal" class="modal hidden fixed z-30 left-0 top-0 w-full h-full overflow-auto justify-center items-center">
+            <div class="bg-white border border-slate-800 w-5/6 h-5/6 flex">
+                <div class="w-1/2 flex flex-col">
+                    <div class="bg-yellow-300 w-full h-1/4 text-center">
+                        <p>Projet</p>
+                        <p>Shuffle Café</p>
+                    </div>
+                    <div class="bg-slate-800 w-full h-3/4">
+
+                    </div>
+                </div>
+                <div class="w-1/2">
+                    <p class="text-slate-700">carouselle ici</p>
+                </div>
+                <span class="closeModal text-2xl font-bold float-right hover:text-black hover:cursor-pointer">&times;</span>
+            </div>
+        </div>
+
+
         <!-- Lab -->
         <section id="lab">
             <h2 class="text-4xl text-center bg-slate-700 py-5 tShadow lg:bg-transparent lg:text-7xl" data-aos="fade-right">Lab</h2>
@@ -151,7 +173,7 @@
         </section>
         <!-- Contact -->
         <section id="contact">
-            <img src="./assets/images/bg_kc_up.svg">
+            <img src="./assets/images/bg_kc_up.svg" alt="backgound du haut">
             <div class="bg-white">
                 <h2 class="text-slate-700 text-center text-4xl mb-10">Say something !</h2>
                 <div class="flex justify-center">
@@ -167,7 +189,7 @@
                 </div>
                 <!-- <img class="w-32" src="./assets/images/comta.png" alt="singe qui fait la compta"> -->
             </div>
-            <img src="./assets/images/bg_kc_down.svg">
+            <img src="./assets/images/bg_kc_down.svg" alt="backgound du bas">
         </section>
     </main>
     <footer class="sm:h-72 text-white text-center bg-slate-800 flex flex-col items-center justify-center sm:flex-row sm:flex-wrap">
@@ -176,11 +198,11 @@
             <a href="https://www.linkedin.com/in/august-gros/" target="_blank"><img class="yellowCustom hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)] w-20 h-20 p-3" src="./assets/images/logo_linkedin.svg" alt="logo linkedin"></a>
         </div>
         <ul class="text-3xl sm:text-xl sm:mt-10 sm:order-1 sm:w-1/3">
-            <li><a class="border-b border-transparent border-b-2 hover:border-yellow-500" href="#about">About</a></li>
-            <li><a class="border-b border-transparent border-b-2 hover:border-yellow-500" href="#work">Work</a></li>
-            <li><a class="border-b border-transparent border-b-2 hover:border-yellow-500" href="#lab">Lab</a></li>
-            <li><a class="border-b border-transparent border-b-2 hover:border-yellow-500" href="#blog">Blog</a></li>
-            <li><a class="border-b border-transparent border-b-2 hover:border-yellow-500" href="#contact">Contact</a></li>
+            <li><a class="border-transparent border-b-2 hover:border-yellow-500" href="#about">About</a></li>
+            <li><a class="border-transparent border-b-2 hover:border-yellow-500" href="#work">Work</a></li>
+            <li><a class="border-transparent border-b-2 hover:border-yellow-500" href="#lab">Lab</a></li>
+            <li><a class="border-transparent border-b-2 hover:border-yellow-500" href="#blog">Blog</a></li>
+            <li><a class="border-transparent border-b-2 hover:border-yellow-500" href="#contact">Contact</a></li>
         </ul>
         <a href="#" class="m-8 hover:underline hover:underline-offset-2 hover:decoration-yellow-500 sm:m-0 sm:order-3 sm:w-1/3 sm:text-xl">
             <p>Terms and conditions</p>
@@ -193,5 +215,6 @@
     AOS.init();
 </script>
 <script src="./js/script.js"></script>
+<script src="../path/to/flowbite/dist/flowbite.js"></script>
 </body>
 </html>
