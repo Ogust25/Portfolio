@@ -99,8 +99,6 @@ window.addEventListener("click",function(event){
   }
 })
 
-
-
 /* Api Medium */
 
 /* let apiCall = function(){
