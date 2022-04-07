@@ -12,7 +12,7 @@ const regleMessage = /^[a-zA-Záàâäãåçéèêëíìîïñóòôöõúùûü
 form.addEventListener('submit', function(e){
     e.preventDefault()
     let formData = new FormData(form)
-    let url = 'form.php';
+    let url = '../php/form.php';
     fetch(url,{
         method: 'POST',
         body: formData
