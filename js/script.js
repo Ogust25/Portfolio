@@ -79,25 +79,54 @@ window.onscroll = () => {
 };
 
 
-/* Modal */
+/* Event Modal */
 
-const modal = document.querySelector("#mainModal");
-const btnModal = document.querySelector("#btnModalCafe");
-const closeModal = document.querySelector(".closeModal");
+const closeModal = document.querySelectorAll(".closeModal");
+closeModal.forEach(e => {
+    let closeTarget = e.dataset.target;
+    e.addEventListener("click", function(){
+        document.querySelector('#'+closeTarget).style.display = "none";
+    })
+});
 
-btnModal.addEventListener("click", function(){
-    modal.style.display = "flex";
+/* const window = document.querySelectorAll("window");
+window.forEach(e => {
+    let closeTarget = e.dataset.target;
+    e.addEventListener("click",function(){
+        if (e.target == modal) {
+            document.querySelector('#'+closeTarget).style.display = "none";
+        }
+    })
+
+    e.addEventListener("click", function(){
+        document.querySelector('#'+closeTarget).style.display = "none";
+    })
+}); */
+
+
+/* Café */
+const shuffleModal = document.querySelector("#shuffleModal");
+const shuffleBtnModal = document.querySelector("#shuffleBtnModal");
+shuffleBtnModal.addEventListener("click", function(){
+    shuffleModal.style.display = "flex";
 })
 
-closeModal.addEventListener("click", function(){
-    modal.style.display = "none";
+/* Devfinder */
+const devfinderModal = document.querySelector("#devfinderModal");
+const devfinderBtnModal = document.querySelector("#devfinderBtnModal");
+devfinderBtnModal.addEventListener("click", function(){
+    devfinderModal.style.display = "flex";
 })
 
-window.addEventListener("click",function(event){
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+/* Widget */
+const widgetModal = document.querySelector("#widgetModal");
+const widgetBtnModal = document.querySelector("#widgetBtnModal");
+widgetBtnModal.addEventListener("click", function(){
+    widgetModal.style.display = "flex";
 })
+
+
+
 
 /* Api Medium */
 
