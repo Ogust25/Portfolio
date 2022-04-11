@@ -104,26 +104,46 @@ window.forEach(e => {
 }); */
 
 
+/* PROJET */
 /* Café */
 const shuffleModal = document.querySelector("#shuffleModal");
 const shuffleBtnModal = document.querySelector("#shuffleBtnModal");
 shuffleBtnModal.addEventListener("click", function(){
     shuffleModal.style.display = "flex";
 })
-
 /* Devfinder */
 const devfinderModal = document.querySelector("#devfinderModal");
 const devfinderBtnModal = document.querySelector("#devfinderBtnModal");
 devfinderBtnModal.addEventListener("click", function(){
     devfinderModal.style.display = "flex";
 })
-
 /* Widget */
 const widgetModal = document.querySelector("#widgetModal");
 const widgetBtnModal = document.querySelector("#widgetBtnModal");
 widgetBtnModal.addEventListener("click", function(){
     widgetModal.style.display = "flex";
 })
+
+/* LAB */
+/* Order Card */
+const orderModal = document.querySelector("#orderModal");
+const orderBtnModal = document.querySelector("#orderBtnModal");
+orderBtnModal.addEventListener("click", function(){
+    orderModal.style.display = "flex";
+})
+/* Formulaire */
+const formModal = document.querySelector("#formModal");
+const formBtnModal = document.querySelector("#formBtnModal");
+formBtnModal.addEventListener("click", function(){
+    formModal.style.display = "flex";
+})
+/* Néomorphisme */
+const neoModal = document.querySelector("#neoModal");
+const neoBtnModal = document.querySelector("#neoBtnModal");
+neoBtnModal.addEventListener("click", function(){
+    neoModal.style.display = "flex";
+})
+
 
 
 

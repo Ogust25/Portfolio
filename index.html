@@ -105,7 +105,7 @@
                     <p class="text-5xl font-bold">Shuffle Café</p>
                 </div>
                 <div class="w-full flex justify-center items-center lg:order-3 lg:w-2/3 lg:h-full lg:bg-slate-600">
-                    <img class="p-3 z-50 sm:w-4/6 lg:w-11/12" src="./assets/images/projet_cafe.png" alt="test">
+                    <img class="p-3 z-50 sm:w-4/6 lg:w-11/12" src="./assets/images/projet_cafe.png" alt="image du projet">
                 </div>
                 <div class="px-3 w-full h-full flex flex-col justify-evenly lg:order-2 lg:w-1/3 lg:h-4/5">
                     <div>
@@ -138,7 +138,7 @@
                     <p class="text-5xl font-bold">Devfinder</p>
                 </div>
                 <div class="w-full flex justify-center items-center lg:order-3 lg:w-2/3 lg:h-full lg:bg-slate-600">
-                    <img class="p-3 z-50 sm:w-4/6 lg:w-11/12" src="./assets/images/projet_cafe.png" alt="test">
+                    <img class="p-3 z-50 sm:w-4/6 lg:w-11/12" src="./assets/images/projet_git.png" alt="image du projet">
                 </div>
                 <div class="px-3 w-full h-full flex flex-col justify-evenly lg:order-2 lg:w-1/3 lg:h-4/5">
                     <div>
@@ -150,13 +150,48 @@
                         <ul class="flex flex-col flex-wrap">
                             <li>HTML5</li>
                             <li>CSS3</li>
-                            <li>PHP</li>
+                            <li>SASS</li>
+                            <li>Js</li>
                             <li>Git / GitHub</li>
+                            <li>Api GitHub</li>
                         </ul>
                     </div>
                     <div class="flex justify-center m-3">
                         <a href="https://augustg.promo-106.codeur.online/devfinder/" target="_blank"><img class="yellowCustomBg hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)] mr-8 w-20 h-20 p-3" src="./assets/images/link.svg" alt="lien du site"></a>
                         <a href="https://github.com/Ogust25/Appli_Git" target="_blank"><img class="yellowCustomBg hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)]  w-18 h-18 p-3" src="./assets/images/logo_git.svg" alt="lien du github"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Widget -->
+        <div id="widgetModal" class="modal hidden fixed z-50 left-0 top-0 w-full h-full overflow-auto justify-center items-center">
+            <div class="bg-slate-800 w-full h-full flex flex-col lg:flex-wrap lg:h-5/6 lg:w-5/6">
+                <div class="yellowCustomBg lg:w-1/3 lg:h-1/5 lg:order-1 text-slate-800 p-5 w-full h-1/5 text-center flex flex-col justify-center items-center">
+                    <span data-target="widgetModal" class="closeModal text-5xl font-bold float-right hover:text-black hover:cursor-pointer">&times;</span>
+                    <p class="text-4xl font-bold">Projet</p>
+                    <p class="text-5xl font-bold">Widget</p>
+                </div>
+                <div class="w-full flex justify-center items-center lg:order-3 lg:w-2/3 lg:h-full lg:bg-slate-600">
+                    <img class="p-3 z-50 sm:w-4/6 lg:w-11/12" src="./assets/images/projet_widget.png" alt="image du projet">
+                </div>
+                <div class="px-3 w-full h-full flex flex-col justify-evenly lg:order-2 lg:w-1/3 lg:h-4/5">
+                    <div>
+                        <p>Projet effectué durant ma formation pour découvrir le maquettage et l'utilisation de javascript et des API.</p>
+                        <p>Intégration d'une maquette fourni par un autre eleve de la classe (Thomas Bruant).</p>
+                    </div>
+                    <div>
+                        <p class="text-lg font-bold">Techno :</p>
+                        <ul class="flex flex-col flex-wrap">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JS</li>
+                            <li>Api OpenWeather</li>
+                            <li>Git / GitHub</li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-center m-3">
+                        <a href="#" target="_blank"><img class="yellowCustomBg hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)] mr-8 w-20 h-20 p-3" src="./assets/images/link.svg" alt="lien du site"></a>
+                        <a href="https://github.com/Ogust25/Projet_Widget" target="_blank"><img class="yellowCustomBg hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)]  w-18 h-18 p-3" src="./assets/images/logo_git.svg" alt="lien du github"></a>
                     </div>
                 </div>
             </div>
@@ -172,7 +207,7 @@
                     <div class=" hover:opacity-100 opacity-0 flex flex-col items-center justify-center z-10 absolute top-0 w-full h-full bgBox">
                         <p class="text-xl">Lab</p>
                         <p class="text-3xl mb-3">Order Card</p>
-                        <a class= "yellowCustomBorder text-white px-10 py-2 text-xl hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)]" href="#">En savoir plus</a>
+                        <button id="orderBtnModal" class= "yellowCustomBorder text-white px-10 py-2 text-xl hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)]">En savoir plus</button>
                     </div>
                 </div>
                 <!-- Formulaire -->
@@ -181,7 +216,7 @@
                     <div class=" hover:opacity-100 opacity-0 flex flex-col items-center justify-center z-10 absolute top-0 w-full h-full bgBox">
                         <p class="text-xl">Lab</p>
                         <p class="text-3xl mb-3">Formulaire</p>
-                        <a class= "yellowCustomBorder text-white px-10 py-2 text-xl hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)]" href="#">En savoir plus</a>
+                        <button id="formBtnModal" class= "yellowCustomBorder text-white px-10 py-2 text-xl hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)]">En savoir plus</button>
                     </div>
                 </div>
                 <!-- Néomorphisme -->        
@@ -190,11 +225,111 @@
                     <div class=" hover:opacity-100 opacity-0 flex flex-col items-center justify-center z-10 absolute top-0 w-full h-full bgBox">
                         <p class="text-xl">Lab</p>
                         <p class="text-3xl mb-3">Néomorphisme</p>
-                        <a class= "yellowCustomBorder text-white px-10 py-2 text-xl hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)]" href="#">En savoir plus</a>
+                        <button id="neoBtnModal" class= "yellowCustomBorder text-white px-10 py-2 text-xl hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)]">En savoir plus</button>
                     </div>
                 </div>                 
             </div>
         </section>
+
+        <!-- Modal Lab -->
+        <!-- Order Card -->
+        <div id="orderModal" class="modal hidden fixed z-50 left-0 top-0 w-full h-full overflow-auto justify-center items-center">
+            <div class="bg-slate-800 w-full h-full flex flex-col lg:flex-wrap lg:h-5/6 lg:w-5/6">
+                <div class="yellowCustomBg lg:w-1/3 lg:h-1/5 lg:order-1 text-slate-800 p-5 w-full h-1/5 text-center flex flex-col justify-center items-center">
+                    <span data-target="orderModal" class="closeModal text-5xl font-bold float-right hover:text-black hover:cursor-pointer">&times;</span>
+                    <p class="text-4xl font-bold">Lab</p>
+                    <p class="text-5xl font-bold">Order Card</p>
+                </div>
+                <div class="w-full flex justify-center items-center lg:order-3 lg:w-2/3 lg:h-full lg:bg-slate-600">
+                    <img class="p-3 z-50 sm:w-4/6 lg:w-11/12" src="./assets/images/projet_order.png" alt="image du projet">
+                </div>
+                <div class="px-3 w-full h-full flex flex-col justify-evenly lg:order-2 lg:w-1/3 lg:h-4/5">
+                    <div>
+                        <p>Projet effectué durant ma formation pour découvrir les framworks CSS.</p>
+                        <p>Intégration d'une maquette fourni.</p>
+                    </div>
+                    <div>
+                        <p class="text-lg font-bold">Techno :</p>
+                        <ul class="flex flex-col flex-wrap">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Tailwind CSS</li>
+                            <li>Git / GitHub</li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-center m-3">
+                        <a href="https://augustg.promo-106.codeur.online/order/" target="_blank"><img class="yellowCustomBg hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)] mr-8 w-20 h-20 p-3" src="./assets/images/link.svg" alt="lien du site"></a>
+                        <a href="https://github.com/Ogust25/Order_Card" target="_blank"><img class="yellowCustomBg hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)]  w-18 h-18 p-3" src="./assets/images/logo_git.svg" alt="lien du github"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Formulaire -->
+        <div id="formModal" class="modal hidden fixed z-50 left-0 top-0 w-full h-full overflow-auto justify-center items-center">
+            <div class="bg-slate-800 w-full h-full flex flex-col lg:flex-wrap lg:h-5/6 lg:w-5/6">
+                <div class="yellowCustomBg lg:w-1/3 lg:h-1/5 lg:order-1 text-slate-800 p-5 w-full h-1/5 text-center flex flex-col justify-center items-center">
+                    <span data-target="formModal" class="closeModal text-5xl font-bold float-right hover:text-black hover:cursor-pointer">&times;</span>
+                    <p class="text-4xl font-bold">Lab</p>
+                    <p class="text-5xl font-bold">Formulaire</p>
+                </div>
+                <div class="w-full flex justify-center items-center lg:order-3 lg:w-2/3 lg:h-full lg:bg-slate-600">
+                    <img class="p-3 z-50 sm:w-4/6 lg:w-11/12" src="./assets/images/projet_form.png" alt="image du projet">
+                </div>
+                <div class="px-3 w-full h-full flex flex-col justify-evenly lg:order-2 lg:w-1/3 lg:h-4/5">
+                    <div>
+                        <p>Projet effectué durant ma formation pour découvrir le AJAX et le PHP.</p>
+                        <p>Maquettage et intégration d'une maquette.</p>
+                    </div>
+                    <div>
+                        <p class="text-lg font-bold">Techno :</p>
+                        <ul class="flex flex-col flex-wrap">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Js</li>
+                            <li>PHP</li>
+                            <li>Git / GitHub</li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-center m-3">
+                        <a href="https://augustg.promo-106.codeur.online/contact/" target="_blank"><img class="yellowCustomBg hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)] mr-8 w-20 h-20 p-3" src="./assets/images/link.svg" alt="lien du site"></a>
+                        <a href="https://github.com/Ogust25/Projet6_Form/tree/master" target="_blank"><img class="yellowCustomBg hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)]  w-18 h-18 p-3" src="./assets/images/logo_git.svg" alt="lien du github"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Néomorphisme -->
+        <div id="neoModal" class="modal hidden fixed z-50 left-0 top-0 w-full h-full overflow-auto justify-center items-center">
+            <div class="bg-slate-800 w-full h-full flex flex-col lg:flex-wrap lg:h-5/6 lg:w-5/6">
+                <div class="yellowCustomBg lg:w-1/3 lg:h-1/5 lg:order-1 text-slate-800 p-5 w-full h-1/5 text-center flex flex-col justify-center items-center">
+                    <span data-target="neoModal" class="closeModal text-5xl font-bold float-right hover:text-black hover:cursor-pointer">&times;</span>
+                    <p class="text-4xl font-bold">Lab</p>
+                    <p class="text-5xl font-bold">Néomorphisme</p>
+                </div>
+                <div class="w-full flex justify-center items-center lg:order-3 lg:w-2/3 lg:h-full lg:bg-slate-600">
+                    <img class="p-3 z-50 sm:w-4/6 lg:w-11/12" src="./assets/images/projet_neo.png" alt="image du projet">
+                </div>
+                <div class="px-3 w-full h-full flex flex-col justify-evenly lg:order-2 lg:w-1/3 lg:h-4/5">
+                    <div>
+                        <p>Projet effectué durant ma formation pour découvrir CSS.</p>
+                        <p>Intégration d'une maquette fourni.</p>
+                    </div>
+                    <div>
+                        <p class="text-lg font-bold">Techno :</p>
+                        <ul class="flex flex-col flex-wrap">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Git / GitHub</li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-center m-3">
+                        <a href="#" target="_blank"><img class="yellowCustomBg hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)] mr-8 w-20 h-20 p-3" src="./assets/images/link.svg" alt="lien du site"></a>
+                        <a href="https://github.com/Ogust25/neomorph" target="_blank"><img class="yellowCustomBg hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)]  w-18 h-18 p-3" src="./assets/images/logo_git.svg" alt="lien du github"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Blog -->
         <section id="blog" class="h-screen flex flex-col justify-around">
             <div class="lg:flex lg:justify-center">
