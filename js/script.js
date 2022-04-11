@@ -89,19 +89,15 @@ closeModal.forEach(e => {
     })
 });
 
-/* const window = document.querySelectorAll("window");
-window.forEach(e => {
-    let closeTarget = e.dataset.target;
+/* const window = document.querySelector("window");
+const modal = document.querySelectorAll('#modal');
+window.forEach((e) => {
     e.addEventListener("click",function(){
         if (e.target == modal) {
-            document.querySelector('#'+closeTarget).style.display = "none";
+          modal.style.display = "none";
         }
     })
-
-    e.addEventListener("click", function(){
-        document.querySelector('#'+closeTarget).style.display = "none";
-    })
-}); */
+}) */
 
 
 /* PROJET */
@@ -144,7 +140,21 @@ neoBtnModal.addEventListener("click", function(){
     neoModal.style.display = "flex";
 })
 
+/* Menu Burger */
 
+const modalBurger = document.querySelector('#modalBurger')
+const btnBurger = document.querySelector("#btnBurger");
+const closeBurger = document.querySelectorAll('.closeBurger');
+
+btnBurger.addEventListener("click", function() {
+    modalBurger.style.display = "flex";
+})
+
+closeBurger.forEach((e) => {
+    e.addEventListener("click", function() {
+        modalBurger.style.display = "none";
+    })
+});
 
 
 
