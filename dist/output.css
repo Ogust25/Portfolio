@@ -717,6 +717,10 @@ input[type=file]::file-selector-button:hover {
   left: 0px;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .right-0 {
   right: 0px;
 }
@@ -729,16 +733,16 @@ input[type=file]::file-selector-button:hover {
   z-index: 30;
 }
 
-.z-50 {
-  z-index: 50;
-}
-
 .z-0 {
   z-index: 0;
 }
 
 .z-10 {
   z-index: 10;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .m-5 {
@@ -758,19 +762,14 @@ input[type=file]::file-selector-button:hover {
   margin-right: 2.5rem;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.my-10 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-
 .my-20 {
   margin-top: 5rem;
   margin-bottom: 5rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mr-5 {
@@ -781,20 +780,8 @@ input[type=file]::file-selector-button:hover {
   margin-bottom: 5rem;
 }
 
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
-.mb-24 {
-  margin-bottom: 6rem;
-}
-
 .mb-2 {
   margin-bottom: 0.5rem;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
 }
 
 .mb-3 {
@@ -811,6 +798,10 @@ input[type=file]::file-selector-button:hover {
 
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .mb-7 {
@@ -831,10 +822,6 @@ input[type=file]::file-selector-button:hover {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-1\/2 {
-  height: 50%;
 }
 
 .h-48 {
@@ -901,10 +888,6 @@ input[type=file]::file-selector-button:hover {
   justify-content: center;
 }
 
-.justify-between {
-  justify-content: space-between;
-}
-
 .justify-around {
   justify-content: space-around;
 }
@@ -941,14 +924,14 @@ input[type=file]::file-selector-button:hover {
   border-color: transparent;
 }
 
-.bg-slate-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
-}
-
 .bg-slate-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+}
+
+.bg-slate-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
 .object-fill {
@@ -977,6 +960,11 @@ input[type=file]::file-selector-button:hover {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .py-20 {
@@ -1016,11 +1004,6 @@ input[type=file]::file-selector-button:hover {
   line-height: 1.75rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -1038,16 +1021,6 @@ input[type=file]::file-selector-button:hover {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-yellow-300 {
-  --tw-text-opacity: 1;
-  color: rgb(250 202 21 / var(--tw-text-opacity));
-}
-
-.text-gray-50 {
-  --tw-text-opacity: 1;
-  color: rgb(249 250 251 / var(--tw-text-opacity));
 }
 
 .text-slate-800 {
@@ -1201,33 +1174,6 @@ nav ul li.active {
   height: 90vh;
 }
 
-/* Animation Menu Burger */
-
-.slide-bottom {
-  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-@-webkit-keyframes slide-bottom {
-  0% {
-    transform: translateY(0);
-  }
-
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-@keyframes slide-bottom {
-  0% {
-    transform: translateY(-100px);
-  }
-
-  100% {
-    transform: translateY(0px);
-  }
-}
-
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }
@@ -1245,6 +1191,11 @@ nav ul li.active {
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.hover\:text-yellow-300:hover {
+  --tw-text-opacity: 1;
+  color: rgb(250 202 21 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {
@@ -1300,6 +1251,14 @@ nav ul li.active {
     margin-top: 2.5rem;
   }
 
+  .sm\:mb-5 {
+    margin-bottom: 1.25rem;
+  }
+
+  .sm\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -1348,6 +1307,10 @@ nav ul li.active {
     flex-wrap: wrap;
   }
 
+  .sm\:justify-between {
+    justify-content: space-between;
+  }
+
   .sm\:justify-around {
     justify-content: space-around;
   }
@@ -1364,6 +1327,22 @@ nav ul li.active {
 }
 
 @media (min-width: 768px) {
+  .md\:top-0 {
+    top: 0px;
+  }
+
+  .md\:bottom-auto {
+    bottom: auto;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:w-3\/6 {
     width: 50%;
   }
@@ -1384,6 +1363,10 @@ nav ul li.active {
 
   .lg\:my-10 {
     margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .lg\:mb-10 {
     margin-bottom: 2.5rem;
   }
 
@@ -1448,11 +1431,6 @@ nav ul li.active {
     background-color: rgb(71 85 105 / var(--tw-bg-opacity));
   }
 
-  .lg\:py-24 {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-
   .lg\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
@@ -1474,4 +1452,3 @@ nav ul li.active {
     width: 33.333333%;
   }
 }
-  

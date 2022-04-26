@@ -23,22 +23,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/f5e209f987.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <header>
         <video class="relative -z-50 h-screen w-screen object-fill" src="./assets/images/space_black.mp4" loop autoplay muted></video>
         <div class="absolute top-0 left-0 h-full w-full ">
-            <nav class="flex justify-between top-0 fixed w-full ease-in duration-300 z-30">
-                <ul class="text-white text-3xl hidden sm:flex p-5 tShadow">
+            <nav class="flex justify-evenly bottom-0 md:top-0 md:bottom-auto fixed w-full ease-in duration-300 z-30">
+                <ul class="text-white text-3xl hidden md:flex p-5 tShadow">
                     <li class="about mr-5"><a href="#about">Profil</a></li>
                     <li class="work mr-5"><a href="#work">Projet</a></li>
                     <li class="lab mr-5"><a href="#lab">Lab</a></li>
                     <li class="blog mr-5"><a href="#blog">Blog</a></li>
                     <li class="contact"><a href="#contact">Contact</a></li>
                 </ul>
-                <button id="btnBurger" class="m-5 flex sm:hidden"><img src="./assets/images/burger.svg" alt="menu burger"></button>
-                <button class="m-5 text-white">J/N</button>
+                <a class="m-5 flex text-white md:hidden" href="#about"><i class="fa-solid fa-user"></i></a>
+                <a class="m-5 flex text-white md:hidden" href="#work"><i class="fa-solid fa-desktop"></i></a>
+                <a class="m-5 flex text-white md:hidden" href="#lab"><i class="fa-solid fa-flask"></i></a>
+                <a class="m-5 flex text-white md:hidden" href="#blog"><i class="fa-regular fa-chart-bar"></i></a>
+                <a class="m-5 flex text-white md:hidden" href="#contact"><i class="fa-regular fa-comment"></i></a>
             </nav>
             <div class="flex flex-col items-center h-full justify-center">
                 <h1 class="font-bold text-center text-5xl text-white mb-20 tShadow">Hey, je suis <span class="yellowCustom">August</span><br>
@@ -46,40 +50,26 @@
                 <a class="yellowCustomBorder text-white px-10 py-2 text-xl hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)] hover:bg-slate-800" href="#about">En savoir plus</a>
             </div>
         </div>
-        <!-- Menu Burger -->
-
-        <div id="modalBurger" class="modal slide-bottom hidden fixed z-50 left-0 top-0 w-full h-full overflow-auto">
-            <div id="modalBurger-content" class="w-full h-1/2 flex flex-col justify-evenly items-center text-center bg-slate-800">
-                <span class="closeBurger font-bold text-5xl text-yellow-300">&times;</span>
-                <ul class="text-gray-50">
-                    <li class="mb-5"><a class="closeBurger text-2xl" href="#about">Profil</a></li>
-                    <li class="mb-5"><a class="closeBurger text-2xl" href="#work">Projet</a></li>
-                    <li class="mb-5"><a class="closeBurger text-2xl" href="#lab">Lab</a></li>
-                    <li class="mb-5"><a class="closeBurger text-2xl" href="#blog">Blog</a></li>
-                    <li class="mb-5"><a class="closeBurger text-2xl" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
     </header>
     <main class="h-full w-full bgColor text-white">
         <!-- About -->
         <section id="about">
-            <h2 class="text-4xl text-center bg-slate-700 lg:py-24 mb-24 py-5 tShadow lg:bg-transparent lg:text-7xl" data-aos="fade-right">Profil</h2>
+            <h2 class="text-4xl text-center bg-slate-700 py-5 tShadow lg:bg-transparent lg:text-7xl" data-aos="fade-right">Profil</h2>
             <div class="sm:flex sm:flex-wrap sm:justify-around lg:my-10">
                <div class="mx-10 text-lg lg:text-2xl sm:order:1 sm:w-3/5">
                     <p class="mb-2">Salut !</p>
                     <p>Je suis August, développeur Web junior  en apprentissage à l’Access Code School de Besançon.</p>
                     <p>Si vous avez des questions ou que vous voulez en savoir plus, n'hésitez pas à me contacter et à télécharger mon CV ci-dessous.</p> 
                 </div>
-                <div class="flex justify-center mb-10 sm:order-3 sm:w-full">
+                <div class="flex justify-center my-20 lg:mb-10 sm:order-3 sm:w-full">
                     <a class= "yellowCustomBorder text-white px-10 py-2 text-xl hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)] hover:bg-slate-800" href="./assets/cv.pdf">Mon CV</a>
                 </div>
-                <img class="mx-auto my-10 h-48 w-auto sm:order-2 sm:mx-0" src="./assets/images/astronaut.png" alt="singe de l'espace" id="singeSpace"> 
+                <img class="mx-auto h-48 w-auto sm:order-2 sm:mx-0" src="./assets/images/astronaut.png" alt="singe de l'espace" id="singeSpace"> 
             </div>
         </section>
         <!-- Work -->
         <section id="work">
-            <h2 class="text-4xl text-center bg-slate-700 py-5 tShadow lg:bg-transparent lg:text-7xl" data-aos="fade-right">Projet</h2>
+            <h2 class="text-4xl text-center bg-slate-700 py-10 tShadow lg:bg-transparent lg:text-7xl" data-aos="fade-right">Projet</h2>
             <div class="flex-wrap flex py-20">
                 <div class="xl:w-1/3 sm:w-3/6 relative zoom">
                     <img class="z-0 imgZoom" src="./assets/images/projet_cafe.png" alt="projet caf">
@@ -384,7 +374,7 @@
                 </div>
             </div>
             <div class="flex justify-center my-20 sm:order-3 sm:w-full">
-                <a class= "yellowCustomBorder text-white px-10 py-2 text-xl hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)]" href="#">En savoir plus</a>
+                <a class= "yellowCustomBorder text-white px-10 py-2 text-xl hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)]" href="https://medium.com/@august.gros" target="_blank">En savoir plus</a>
             </div>
         </section>
         <!-- Contact -->
@@ -408,24 +398,12 @@
             <!-- <img src="./assets/images/bg_kc_down.svg" alt="backgound du bas"> -->
         </section>
     </main>
-    <footer class="sm:h-72 text-white text-center bg-slate-800 flex flex-col items-center justify-center sm:flex-row sm:flex-wrap">
-        <div class="text-slate-800 flex justify-center m-8 sm:order-2 sm:w-1/3 sm:m-0">
+    <footer class="sm:h-72 text-white text-center bg-slate-800 flex flex-col items-center justify-center">
+        <div class="text-slate-800 flex justify-center m-8 sm:order-2 sm:w-1/3 sm:mb-10">
             <a href="https://github.com/Ogust25" target="_blank"><img class="yellowCustomBg hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)] mr-8 w-20 h-20 p-3" src="./assets/images/logo_git.svg" alt="logo github"></a>
             <a href="https://www.linkedin.com/in/august-gros/" target="_blank"><img class="yellowCustomBg hover:drop-shadow-[0_0px_10px_rgba(230,170,0,0.75)] w-20 h-20 p-3" src="./assets/images/logo_linkedin.svg" alt="logo linkedin"></a>
         </div>
-        <ul class="text-3xl sm:text-xl sm:mt-10 sm:order-1 sm:w-1/3">
-            <li><a class="border-transparent border-b-2 hover:border-yellow-300" href="#about">Profil</a></li>
-            <li><a class="border-transparent border-b-2 hover:border-yellow-300" href="#work">Projet</a></li>
-            <li><a class="border-transparent border-b-2 hover:border-yellow-300" href="#lab">Lab</a></li>
-            <li><a class="border-transparent border-b-2 hover:border-yellow-300" href="#blog">Blog</a></li>
-            <li><a class="border-transparent border-b-2 hover:border-yellow-300" href="#contact">Contact</a></li>
-        </ul>
-        <a href="#" class="m-8 hover:underline hover:underline-offset-2 hover:decoration-yellow-300 sm:m-0 sm:order-3 sm:w-1/3 sm:text-xl">
-            <p>Politique</p>
-            <p>de</p>
-            <p>confidentialité</p>
-        </a>
-        <p class="mb-2 sm:order-4">AUGUST GROS &copy; 2022</p>
+        <p class="mb-2 sm:order-4">&copy; August Gros | Tous droits réservés. <span class="hover:text-yellow-300">Mentions légales</span></p>
     </footer>
 <script>
     AOS.init();

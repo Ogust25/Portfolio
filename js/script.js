@@ -12,7 +12,7 @@ const regleMessage = /^[a-zA-Záàâäãåçéèêëíìîïñóòôöõúùûü
 form.addEventListener('submit', function(e){
     e.preventDefault()
     let formData = new FormData(form)
-    let url = '../php/form.php';
+    let url = './php/form.php';
     fetch(url,{
         method: 'POST',
         body: formData
@@ -57,7 +57,7 @@ const navLi = document.querySelectorAll("nav ul li");
 window.onscroll = () => {
     let current = "";
 
-    if(window.scrollY >= 1000 ){
+    if(window.scrollY >= 90 ){
         document.querySelector('nav').classList.add("stickyCustom")
     }else{
         document.querySelector('nav').classList.remove("stickyCustom")
@@ -139,22 +139,6 @@ const neoBtnModal = document.querySelector("#neoBtnModal");
 neoBtnModal.addEventListener("click", function(){
     neoModal.style.display = "flex";
 })
-
-/* Menu Burger */
-
-const modalBurger = document.querySelector('#modalBurger')
-const btnBurger = document.querySelector("#btnBurger");
-const closeBurger = document.querySelectorAll('.closeBurger');
-
-btnBurger.addEventListener("click", function() {
-    modalBurger.style.display = "flex";
-})
-
-closeBurger.forEach((e) => {
-    e.addEventListener("click", function() {
-        modalBurger.style.display = "none";
-    })
-});
 
 
 
