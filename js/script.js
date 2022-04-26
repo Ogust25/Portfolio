@@ -144,13 +144,18 @@ neoBtnModal.addEventListener("click", function(){
 
 /* Api Medium */
 
-/* let apiCall = function(){
-    let url = `https://api.medium.com/v1`;
-    fetch(url)
-    .then((response) =>
-    response.json().then((data) => {
-        console.log(data);
-    })
-    )  
-}
-apiCall() */
+let url = 'https://mediumpostapi.herokuapp.com/?usermedium=augustgros';
+fetch(url)
+.then((response) => response.json()
+.then((data) => {
+    console.log(data);
+    for (let i = 0; i < 4; i++) {
+        document.querySelector(`#blogImg${i}`).src = data.dataMedium[i].image;
+        document.querySelector(`#blogImg${i}`).alt = data.dataMedium[i].title;
+        document.querySelector(`#blogLink${i}`).href = data.dataMedium[i].link;
+        document.querySelector(`#blogTitle${i}`).innerHTML = data.dataMedium[i].title;
+        document.querySelector(`#blogDate${i}`).innerHTML = data.dataMedium[i].date;
+        document.querySelector(`#blogDesc${i}`).innerHTML = data.dataMedium[i].description;
+    }
+})
+)
