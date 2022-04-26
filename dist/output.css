@@ -836,28 +836,16 @@ input[type=file]::file-selector-button:hover {
   height: 5rem;
 }
 
+.h-60 {
+  height: 15rem;
+}
+
 .h-16 {
   height: 4rem;
 }
 
 .h-40 {
   height: 10rem;
-}
-
-.h-10 {
-  height: 2.5rem;
-}
-
-.h-4 {
-  height: 1rem;
-}
-
-.h-60 {
-  height: 15rem;
-}
-
-.max-h-0 {
-  max-height: 0px;
 }
 
 .w-full {
@@ -876,6 +864,10 @@ input[type=file]::file-selector-button:hover {
   width: 5rem;
 }
 
+.w-60 {
+  width: 15rem;
+}
+
 .w-5\/6 {
   width: 83.333333%;
 }
@@ -886,34 +878,6 @@ input[type=file]::file-selector-button:hover {
 
 .w-32 {
   width: 8rem;
-}
-
-.w-2 {
-  width: 0.5rem;
-}
-
-.w-10 {
-  width: 2.5rem;
-}
-
-.w-4 {
-  width: 1rem;
-}
-
-.w-40 {
-  width: 10rem;
-}
-
-.w-60 {
-  width: 15rem;
-}
-
-.max-w-sm {
-  max-width: 24rem;
-}
-
-.max-w-xs {
-  max-width: 20rem;
 }
 
 .flex-col {
@@ -1163,11 +1127,10 @@ nav ul li.active {
   background-color: #334155;
 }
 
-#about{
+#about, #mentions{
   background: url("../assets/images/bg_stars.png") fixed;
   background-size: 100% auto;
   background-position-y: 10%;
-  height: 50rem;
 }
 
 #blog{
