@@ -153,9 +153,9 @@ fetch(url)
         document.querySelector(`#blogImg${i}`).src = data.dataMedium[i].image;
         document.querySelector(`#blogImg${i}`).alt = data.dataMedium[i].title;
         document.querySelector(`#blogLink${i}`).href = data.dataMedium[i].link;
-        document.querySelector(`#blogTitle${i}`).innerHTML = data.dataMedium[i].title;
-        document.querySelector(`#blogDate${i}`).innerHTML = data.dataMedium[i].date;
-        document.querySelector(`#blogDesc${i}`).innerHTML = data.dataMedium[i].description;
+        document.querySelector(`#blogTitle${i}`).textContent = data.dataMedium[i].title;
+        document.querySelector(`#blogDate${i}`).textContent = data.dataMedium[i].date;
+        document.querySelector(`#blogDesc${i}`).textContent = data.dataMedium[i].description;
     }
 })
 )

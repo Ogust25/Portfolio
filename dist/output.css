@@ -848,6 +848,22 @@ input[type=file]::file-selector-button:hover {
   height: 10rem;
 }
 
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.h-56 {
+  height: 14rem;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -874,10 +890,6 @@ input[type=file]::file-selector-button:hover {
 
 .w-1\/2 {
   width: 50%;
-}
-
-.w-32 {
-  width: 8rem;
 }
 
 .flex-col {
@@ -929,6 +941,10 @@ input[type=file]::file-selector-button:hover {
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
+.bg-bottom {
+  background-position: bottom;
+}
+
 .object-fill {
   -o-object-fit: fill;
      object-fit: fill;
@@ -972,6 +988,11 @@ input[type=file]::file-selector-button:hover {
   padding-right: 2rem;
 }
 
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
 .pt-16 {
   padding-top: 4rem;
 }
@@ -982,6 +1003,10 @@ input[type=file]::file-selector-button:hover {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
 }
 
 .text-center {
@@ -1050,10 +1075,6 @@ input[type=file]::file-selector-button:hover {
 .text-yellow-300 {
   --tw-text-opacity: 1;
   color: rgb(250 202 21 / var(--tw-text-opacity));
-}
-
-.opacity-0 {
-  opacity: 0;
 }
 
 .duration-300 {
@@ -1206,18 +1227,14 @@ nav ul li.active {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.hover\:text-yellow-300:hover {
-  --tw-text-opacity: 1;
-  color: rgb(250 202 21 / var(--tw-text-opacity));
-}
-
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.hover\:opacity-100:hover {
-  opacity: 1;
+.hover\:text-yellow-400:hover {
+  --tw-text-opacity: 1;
+  color: rgb(227 160 8 / var(--tw-text-opacity));
 }
 
 .hover\:drop-shadow-\[0_0px_10px_rgba\(230\2c 170\2c 0\2c 0\.75\)\]:hover {
@@ -1302,14 +1319,6 @@ nav ul li.active {
 }
 
 @media (min-width: 768px) {
-  .md\:fixed {
-    position: fixed;
-  }
-
-  .md\:absolute {
-    position: absolute;
-  }
-
   .md\:top-0 {
     top: 0px;
   }
@@ -1330,8 +1339,21 @@ nav ul li.active {
     display: none;
   }
 
+  .md\:h-full {
+    height: 100%;
+  }
+
   .md\:w-3\/6 {
     width: 50%;
+  }
+
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .md\:pb-0 {
+    padding-bottom: 0px;
   }
 }
 
