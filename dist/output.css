@@ -848,22 +848,6 @@ input[type=file]::file-selector-button:hover {
   height: 10rem;
 }
 
-.h-1 {
-  height: 0.25rem;
-}
-
-.h-12 {
-  height: 3rem;
-}
-
-.h-56 {
-  height: 14rem;
-}
-
-.h-96 {
-  height: 24rem;
-}
-
 .w-full {
   width: 100%;
 }
@@ -1345,11 +1329,6 @@ nav ul li.active {
 
   .md\:w-3\/6 {
     width: 50%;
-  }
-
-  .md\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
   }
 
   .md\:pb-0 {

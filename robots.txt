@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://augustg.promo-106.codeur.online/portfolio-august-gros/sitemap.xml
