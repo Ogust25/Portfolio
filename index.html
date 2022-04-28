@@ -75,7 +75,7 @@
             <h2 class="text-6xl text-center py-5 tShadow lg:bg-transparent lg:text-7xl" data-aos="fade-right">Projet</h2>
             <div class="flex-wrap flex py-20">
                 <div class="xl:w-1/3 sm:w-3/6 relative zoom">
-                    <img class="z-0 imgZoom" src="./assets/images/projet_cafe.png" alt="projet caf">
+                    <img class="z-0 imgZoom" src="./assets/images/projet_cafe/header_cafe.png" alt="projet caf">
                     <div class=" lg:hover:opacity-100 lg:opacity-0 flex flex-col items-center justify-center z-10 absolute top-0 w-full h-full lg:bgBox bgBoxSmall">
                         <p class="text-xl">Projet</p>
                         <p class="text-3xl mb-3">Café Shuffle</p>
@@ -83,7 +83,7 @@
                     </div>
                 </div>
                 <div class="xl:w-1/3 sm:w-3/6 relative zoom">
-                    <img class="z-0 imgZoom" src="./assets/images/projet_git.png" alt="projet git">
+                    <img class="z-0 imgZoom" src="./assets/images/projet_git/light_git.png" alt="projet git">
                     <div class=" lg:hover:opacity-100 lg:opacity-0 flex flex-col items-center justify-center z-10 absolute top-0 w-full h-full lg:bgBox bgBoxSmall">
                         <p class="text-xl">Projet</p>
                         <p class="text-3xl mb-3">Devfinder</p>
@@ -91,7 +91,7 @@
                     </div>
                 </div>                
                 <div class="xl:w-1/3 sm:w-3/6 relative zoom">
-                    <img class="z-0 imgZoom" src="./assets/images/projet_widget.png" alt="projet widget">
+                    <img class="z-0 imgZoom" src="./assets/images/projet_widget/menu_widget.png" alt="projet widget">
                     <div class=" lg:hover:opacity-100 lg:opacity-0 flex flex-col items-center justify-center z-10 absolute top-0 w-full h-full lg:bgBox bgBoxSmall">
                         <p class="text-xl">Projet</p>
                         <p class="text-3xl mb-3">Widget</p>
@@ -112,17 +112,12 @@
                 </div>
                 <div class="w-full flex justify-center items-center lg:order-3 lg:w-2/3 lg:h-full lg:bg-slate-600">
                     <span data-target="shuffleModal" class="closeModal text-5xl hover:text-black hover:cursor-pointer text-slate-800 lg:text-yellow-300 absolute top-0 right-0 mr-4">&times;</span>
-                    <!-- <div class="owl-carousel">
-                        <img src="./assets/images/projet_cafe.png" alt="image du projet">
-                        <img src="./assets/images/projet_form.png" alt="image du projet">
-                        <img src="./assets/images/projet_git.png" alt="image du projet">
-                    </div> -->
                     <div class="owl-carousel owl-theme owl-loaded">
                         <div class="owl-stage-outer">
                             <div class="owl-stage">
-                                <img class="owl-item" src="./assets/images/projet_cafe.png" alt="image du projet">
-                                <img class="owl-item" src="./assets/images/projet_form.png" alt="image du projet">
-                                <img class="owl-item" src="./assets/images/projet_git.png" alt="image du projet">
+                                <img class="owl-item" src="./assets/images/projet_cafe/header_cafe.png" alt="image du projet">
+                                <img class="owl-item" src="./assets/images/projet_cafe/backoffice_cafe.png" alt="image du projet">
+                                <img class="owl-item" src="./assets/images/projet_cafe/form_cafe.png" alt="image du projet">
                             </div>
                         </div>
                     </div>
@@ -156,12 +151,20 @@
         <div id="devfinderModal" class="modal hidden fixed z-50 left-0 top-0 w-full h-full overflow-auto justify-center items-center">
             <div class="bg-slate-800 relative w-full h-full flex flex-col lg:flex-wrap lg:h-5/6 lg:w-5/6">
                 <div class="yellowCustomBg lg:w-1/3 lg:h-1/5 lg:order-1 text-slate-800 p-5 w-full h-1/5 text-center flex flex-col justify-center items-center">
-                    <span data-target="devfinderModal" class="closeModal text-5xl hover:text-black hover:cursor-pointer text-slate-800 lg:text-yellow-300 absolute top-0 right-0 mr-4">&times;</span>
                     <p class="text-4xl font-bold">Projet</p>
                     <p class="text-5xl font-bold">Devfinder</p>
                 </div>
                 <div class="w-full flex justify-center items-center lg:order-3 lg:w-2/3 lg:h-full lg:bg-slate-600">
-                    <img class="p-3 z-50 sm:w-4/6 lg:w-11/12" src="./assets/images/projet_git.png" alt="image du projet">
+                    <span data-target="devfinderModal" class="closeModal text-5xl hover:text-black hover:cursor-pointer text-slate-800 lg:text-yellow-300 absolute top-0 right-0 mr-4">&times;</span>
+                    <div class="owl-carousel owl-theme owl-loaded">
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage">
+                                <img class="owl-item" src="./assets/images/projet_git/light_git.png" alt="image du projet">
+                                <img class="owl-item" src="./assets/images/projet_git/dark_git.png" alt="image du projet">
+                                <img class="owl-item" src="./assets/images/projet_git/test_git.png" alt="image du projet">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="px-8 w-full h-full flex flex-col justify-evenly lg:order-2 lg:w-1/3 lg:h-4/5">
                     <div class="text-lg">
@@ -191,12 +194,18 @@
         <div id="widgetModal" class="modal hidden fixed z-50 left-0 top-0 w-full h-full overflow-auto justify-center items-center">
             <div class="bg-slate-800 relative w-full h-full flex flex-col lg:flex-wrap lg:h-5/6 lg:w-5/6">
                 <div class="yellowCustomBg lg:w-1/3 lg:h-1/5 lg:order-1 text-slate-800 p-5 w-full h-1/5 text-center flex flex-col justify-center items-center">
-                    <span data-target="widgetModal" class="closeModal text-5xl hover:text-black hover:cursor-pointer text-slate-800 lg:text-yellow-300 absolute top-0 right-0 mr-4">&times;</span>
                     <p class="text-4xl font-bold">Projet</p>
                     <p class="text-5xl font-bold">Widget</p>
                 </div>
                 <div class="w-full flex justify-center items-center lg:order-3 lg:w-2/3 lg:h-full lg:bg-slate-600">
-                    <img class="p-3 z-50 sm:w-4/6 lg:w-11/12" src="./assets/images/projet_widget.png" alt="image du projet">
+                    <span data-target="widgetModal" class="closeModal text-5xl hover:text-black hover:cursor-pointer text-slate-800 lg:text-yellow-300 absolute top-0 right-0 mr-4">&times;</span>
+                    <div class="owl-carousel owl-theme owl-loaded">
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage">
+                                <img class="owl-item" src="./assets/images/projet_widget/menu_widget.png" alt="image du projet">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="px-8 w-full h-full flex flex-col justify-evenly lg:order-2 lg:w-1/3 lg:h-4/5">
                     <div class="text-lg">
@@ -260,12 +269,12 @@
         <div id="orderModal" class="modal hidden fixed z-50 left-0 top-0 w-full h-full overflow-auto justify-center items-center">
             <div class="bg-slate-800 relative w-full h-full flex flex-col lg:flex-wrap lg:h-5/6 lg:w-5/6">
                 <div class="yellowCustomBg lg:w-1/3 lg:h-1/5 lg:order-1 text-slate-800 p-5 w-full h-1/5 text-center flex flex-col justify-center items-center">
-                    <span data-target="orderModal" class="closeModal text-5xl hover:text-black hover:cursor-pointer text-slate-800 lg:text-yellow-300 absolute top-0 right-0 mr-4">&times;</span>
                     <p class="text-4xl font-bold">Lab</p>
                     <p class="text-5xl font-bold">Order Card</p>
                 </div>
                 <div class="w-full flex justify-center items-center lg:order-3 lg:w-2/3 lg:h-full lg:bg-slate-600">
-                    <img class="p-3 z-50 sm:w-4/6 lg:w-11/12" src="./assets/images/projet_order.png" alt="image du projet">
+                    <span data-target="orderModal" class="closeModal text-5xl hover:text-black hover:cursor-pointer text-slate-800 lg:text-yellow-300 absolute top-0 right-0 mr-4">&times;</span>
+                    <img src="./assets/images/projet_order.png" alt="image du projet">
                 </div>
                 <div class="px-8 w-full h-full flex flex-col justify-evenly lg:order-2 lg:w-1/3 lg:h-4/5">
                     <div class="text-lg">
@@ -293,12 +302,12 @@
         <div id="formModal" class="modal hidden fixed z-50 left-0 top-0 w-full h-full overflow-auto justify-center items-center">
             <div class="bg-slate-800 relative w-full h-full flex flex-col lg:flex-wrap lg:h-5/6 lg:w-5/6">
                 <div class="yellowCustomBg lg:w-1/3 lg:h-1/5 lg:order-1 text-slate-800 p-5 w-full h-1/5 text-center flex flex-col justify-center items-center">
-                    <span data-target="formModal" class="closeModal text-5xl hover:text-black hover:cursor-pointer text-slate-800 lg:text-yellow-300 absolute top-0 right-0 mr-4">&times;</span>
                     <p class="text-4xl font-bold">Lab</p>
                     <p class="text-5xl font-bold">Formulaire</p>
                 </div>
                 <div class="w-full flex justify-center items-center lg:order-3 lg:w-2/3 lg:h-full lg:bg-slate-600">
-                    <img class="p-3 z-50 sm:w-4/6 lg:w-11/12" src="./assets/images/projet_form.png" alt="image du projet">
+                    <span data-target="formModal" class="closeModal text-5xl hover:text-black hover:cursor-pointer text-slate-800 lg:text-yellow-300 absolute top-0 right-0 mr-4">&times;</span>
+                    <img src="./assets/images/projet_form.png" alt="image du projet">
                 </div>
                 <div class="px-8 w-full h-full flex flex-col justify-evenly lg:order-2 lg:w-1/3 lg:h-4/5">
                     <div class="text-lg">
@@ -329,12 +338,12 @@
         <div id="neoModal" class="modal hidden fixed z-50 left-0 top-0 w-full h-full overflow-auto justify-center items-center">
             <div class="bg-slate-800 relative w-full h-full flex flex-col lg:flex-wrap lg:h-5/6 lg:w-5/6">
                 <div class="yellowCustomBg lg:w-1/3 lg:h-1/5 lg:order-1 text-slate-800 p-5 w-full h-1/5 text-center flex flex-col justify-center items-center">
-                    <span data-target="neoModal" class="closeModal text-5xl hover:text-black hover:cursor-pointer text-slate-800 lg:text-yellow-300 absolute top-0 right-0 mr-4">&times;</span>
                     <p class="text-4xl font-bold">Lab</p>
                     <p class="text-5xl font-bold">Néomorphisme</p>
                 </div>
                 <div class="w-full flex justify-center items-center lg:order-3 lg:w-2/3 lg:h-full lg:bg-slate-600">
-                    <img class="p-3 z-50 sm:w-4/6 lg:w-11/12" src="./assets/images/projet_neo.png" alt="image du projet">
+                    <span data-target="neoModal" class="closeModal text-5xl hover:text-black hover:cursor-pointer text-slate-800 lg:text-yellow-300 absolute top-0 right-0 mr-4">&times;</span>
+                    <img src="./assets/images/projet_neo.png" alt="image du projet">
                 </div>
                 <div class="px-8 w-full h-full flex flex-col justify-evenly lg:order-2 lg:w-1/3 lg:h-4/5">
                     <div class="text-lg">
