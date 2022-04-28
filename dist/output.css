@@ -745,6 +745,10 @@ input[type=file]::file-selector-button:hover {
   z-index: 50;
 }
 
+.z-40 {
+  z-index: 40;
+}
+
 .m-5 {
   margin: 1.25rem;
 }
