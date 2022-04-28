@@ -968,9 +968,19 @@ input[type=file]::file-selector-button:hover {
   padding-right: 2rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .px-7 {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
+}
+
+.py-40 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .pt-16 {
@@ -1135,37 +1145,6 @@ input[type=file]::file-selector-button:hover {
   }
 }
 
-/* .rotateAnimation {
-	animation: rotate-center 0.1s ease-in-out both infinite;
-}
-@keyframes rotate-center {
-    0% {
-        -webkit-transform: rotate(0);
-        transform: rotate(0);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-.rotateDiagonalAnimation {
-	        animation: rotate-diagonal-1 0.1s linear both infinite;
-}
-@keyframes rotate-diagonal-1 {
-    0% {
-        -webkit-transform: rotate3d(1, 1, 0, 0deg);
-        transform: rotate3d(1, 1, 0, 0deg);
-    }
-    50% {
-        -webkit-transform: rotate3d(1, 1, 0, -180deg);
-        transform: rotate3d(1, 1, 0, -180deg);
-    }
-    100% {
-        -webkit-transform: rotate3d(1, 1, 0, -360deg);
-        transform: rotate3d(1, 1, 0, -360deg);
-    }
-} */
-
 .yellowCustomBg{
   background: linear-gradient(135deg, #FFA73F 0%, #FFEC3F 100%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1249,7 +1228,6 @@ nav ul li.active {
 #contact{
   background: url("../assets/images/bg_form.png") no-repeat;
   background-size: 100% 100%;
-  height: 90vh;
 }
 
 .hover\:cursor-pointer:hover {
@@ -1355,6 +1333,11 @@ nav ul li.active {
     padding-left: 0px;
     padding-right: 0px;
   }
+
+  .sm\:py-40 {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1459,6 +1442,11 @@ nav ul li.active {
   .lg\:bg-slate-600 {
     --tw-bg-opacity: 1;
     background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+  }
+
+  .lg\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .lg\:text-7xl {
