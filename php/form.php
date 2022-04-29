@@ -16,7 +16,7 @@ if((isset($_POST['message']))&&(preg_match($regleMessage, $_POST['message']))){
 if(($nom)&&($email)&&($message)){
     $res = array('validation' => "Email envoyé");
     echo json_encode($res);
-    mail("wcpdduddstfm@midiharmonica.com", "Bonjour, $nom", $message, "From: $email");
+    mail("august.gros@gmail.com", "Name : $nom", $message, "From : $email");
 }
 
 ?>
