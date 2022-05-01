@@ -1083,30 +1083,6 @@ input[type=file]::file-selector-button:hover {
           animation-duration: 2s;
 }
 
-.floatAnimation1{
-  transform: translatey(0px);
-  -webkit-animation: float ease-in-out infinite;
-          animation: float ease-in-out infinite;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-}
-
-.floatAnimation2{
-  transform: translatey(0px);
-  -webkit-animation: float ease-in-out infinite;
-          animation: float ease-in-out infinite;
-  -webkit-animation-duration: 0.1s;
-          animation-duration: 0.1s;
-}
-
-.floatAnimation3{
-  transform: translatey(0px);
-  -webkit-animation: float ease-in-out infinite;
-          animation: float ease-in-out infinite;
-  -webkit-animation-duration: 0.01s;
-          animation-duration: 0.01s;
-}
-
 @-webkit-keyframes float {
   0% {
     transform: translatey(0px);
@@ -1154,13 +1130,6 @@ input[type=file]::file-selector-button:hover {
   border: 2px solid transparent;
 }
 
-nav ul li.active {
-  background: 
-        linear-gradient(#334155,#334155) padding-box,
-        linear-gradient(135deg, #FFA73F 0%, #FFEC3F 100%) border-box;
-  border-bottom: 3px solid transparent;
-}
-
 .stickyCustom{
   background-color: #334155;
 }
@@ -1178,15 +1147,6 @@ nav ul li.active {
 
 .bgColor{
   background-color: #242635;
-}
-
-.bgBox{
-  transition: ease-out 0.5s;
-}
-
-.bgBox:hover{
-  background: linear-gradient(10deg, rgba(0, 0, 0, 0.8), rgba(63, 63, 63, 0.5));
-  transition: ease-in 0.3s;
 }
 
 .bgBoxSmall{
@@ -1451,6 +1411,15 @@ nav ul li.active {
 
   .lg\:opacity-0 {
     opacity: 0;
+  }
+
+  .lg\:bgBox{
+    transition: ease-out 0.5s;
+  }
+
+  .lg\:bgBox:hover{
+    background: linear-gradient(10deg, rgba(0, 0, 0, 0.8), rgba(63, 63, 63, 0.5));
+    transition: ease-in 0.3s;
   }
 
   .lg\:hover\:opacity-100:hover {
