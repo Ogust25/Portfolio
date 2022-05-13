@@ -2,7 +2,7 @@
 
 $regleNomPrenom = "/^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ'-]+$/";
 $regleEmail = "/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/";
-$regleMessage = "/^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ',;()-]+$/";
+$regleMessage = "/^[a-zA-Z0-9áàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ',;()-]+$/";
 
 if((isset($_POST['nom']))&&(preg_match($regleNomPrenom, $_POST['nom']))){
     $nom = $_POST['nom'];
@@ -16,7 +16,7 @@ if((isset($_POST['message']))&&(preg_match($regleMessage, $_POST['message']))){
 if(($nom)&&($email)&&($message)){
     $res = array('validation' => "Email envoyé");
     echo json_encode($res);
-    mail("august.gros@gmail.com", "Name : $nom", $message, "From : $email");
-}
+    mail("ghorus25@hotmail.fr", "Name : ". $nom, $message, "From : $email");
+}   
 
 ?>

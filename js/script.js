@@ -172,31 +172,3 @@ $(document).ready(function(){
         autoplayHoverPause:true,
     });
 });
-
-/* rire */
-
-const singe = document.querySelector("#singeSpace");
-let count = 0;
-singe.addEventListener('click', function() {
-    count++;
-    switch (count) {
-        case 1:
-            singe.classList.remove("floatAnimation");
-            singe.classList.add("floatAnimation1");
-        break;
-        case 2:
-            singe.classList.remove("floatAnimation1");
-            singe.classList.add("floatAnimation2");
-        break;
-        case 3:
-            singe.classList.remove("floatAnimation2");
-            singe.classList.add("floatAnimation3");
-        break;
-    
-        default:
-            count = 0;
-            singe.classList.remove("floatAnimation3");
-            singe.classList.add("floatAnimation");
-        break;
-    }
-})
